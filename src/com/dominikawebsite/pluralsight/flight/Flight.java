@@ -30,6 +30,19 @@ public class Flight {
 
     public Flight(int flightNumber){this.flightNumber=flightNumber;}
 
+    public int getSeats(){return 150;}
+    @Override
+    public boolean equals(Object o){
+        if(super.equals(o)) //if they are pointing to the same object
+            return true;
+        if(!(o instanceof Flight)) //if they are not members of the same class
+            return false;
+        Flight other = (Flight) o;
+        return flightClass==other.flightClass&&flightNumber==other.flightNumber;
+    }
+
+    public int getPassengers(){return passengers;}
+
     //method
     public void add1Passenger(){
         if (hasSeating())//(passengers<seats) - we've created a new method hasSeating
@@ -129,27 +142,5 @@ public class Flight {
         flight1.add1Passenger();
         flight1.add1Passenger();
         System.out.println(flight2.passengers); // 2 passengers in flight1 and flight2
-    }
-
-    public static void main(String[] args) {
-        Flight f = new Flight();
-        Passenger p1 = new Passenger(0,1);
-        Passenger p2 = new Passenger(0,2);
-        f.add1Passenger();//bez parametrów
-        f.add1Passenger(2); //int bags
-        f.add1Passenger(p2); //Passenger p
-        short threeBags = 3; // no overload that accepts the short
-        // system knows how to convert short to int, so it will bw int bags, int carryOns
-        f.add1Passenger(threeBags,3); //int bags, int carryOns
-        f.add1Passenger(p2,1); //Passenger p, int carryOns
-
-        Passenger janet = new Passenger (0,1);
-        Passenger john = new Passenger (0,2);
-        f.addPassengers(new Passenger[]{janet,john});
-        Passenger fred = new Passenger(0,2);
-        Passenger sarah = new Passenger(0,2);
-        Passenger susie = new Passenger(0,0);
-        f.addPassengers(fred,sarah,susie);
-        f.addPassengers(); // mozna tez z pusta lista, ale to nic nie zmieni
     }
 }
