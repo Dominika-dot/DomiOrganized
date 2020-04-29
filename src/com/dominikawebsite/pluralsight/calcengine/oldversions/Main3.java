@@ -1,20 +1,20 @@
-package com.dominikawebsite.pluralsight.calcEngine;
+package com.dominikawebsite.pluralsight.calcEngine.oldVersions;
 
-public class CalcEngineMain {
+public class Main3 {
 
     public static void main(String[] args) {
 
-        MathEquation[] equations = new MathEquation[4];
+        MathEquation3[] equations = new MathEquation3[4];
         /*equations[0] = create(100.0d, 50.0d, 'd');
         equations[1] = create(25.0d,92.0d,'a');
         equations[2] = create(225.0d,17.0d,'s');
         equations[3] = create(11.0d,3.0d,'m');*/
-        equations[0] = new MathEquation('d', 100.d, 50.0d);
-        equations[1] = new MathEquation('a', 25.0d, 92.0d);
-        equations[2] = new MathEquation('s', 225.0d, 17.0d);
-        equations[3] = new MathEquation('m', 11.0d, 3.0d);
+        equations[0] = new MathEquation3('d', 100.d, 50.0d);
+        equations[1] = new MathEquation3('a', 25.0d, 92.0d);
+        equations[2] = new MathEquation3('s', 225.0d, 17.0d);
+        equations[3] = new MathEquation3('m', 11.0d, 3.0d);
 
-        for (MathEquation equation : equations) {
+        for (MathEquation3 equation : equations) {
             equation.execute();
             System.out.println("result = " + equation.getResult());
         }
@@ -23,7 +23,7 @@ public class CalcEngineMain {
         double rightDouble = 4.0d;
         int leftInt = 9;
         int rightInt = 4;
-        MathEquation equationOverload = new MathEquation('d');
+        MathEquation3 equationOverload = new MathEquation3('d');
         equationOverload.execute(leftDouble, rightDouble);
         System.out.println("result=" + equationOverload.getResult());
 

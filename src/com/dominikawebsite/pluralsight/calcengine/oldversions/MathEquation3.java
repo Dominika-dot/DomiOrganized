@@ -1,6 +1,6 @@
-package com.dominikawebsite.pluralsight.calcEngine;
+package com.dominikawebsite.pluralsight.calcEngine.oldVersions;
 
-public class MathEquation {
+public class MathEquation3 {
 
     private double leftVal;
     private double rightVal;
@@ -15,13 +15,13 @@ public class MathEquation {
     public void setOpCode(char opCode){this.opCode=opCode;}
     public double getResult(){return result;}
 
-    public MathEquation(){}
+    public MathEquation3(){}
 
-    public MathEquation(char opCode){
+    public MathEquation3(char opCode){
         this.opCode=opCode;
     }
 
-    public MathEquation(char opCode, double leftVal, double rightVal){
+    public MathEquation3(char opCode, double leftVal, double rightVal){
         this(opCode);
         this.leftVal=leftVal;
         this.rightVal=rightVal;
