@@ -1,4 +1,4 @@
-package com.dominikawebsite.pluralsight.calcEngine;
+package com.dominikawebsite.pluralsight.calcengine;
 
 public class Adder extends CalculateBase {
     public Adder(){}

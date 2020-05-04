@@ -1,4 +1,4 @@
-package com.dominikawebsite.pluralsight.calcEngine;
+package com.dominikawebsite.pluralsight.calcengine;
 
 public class Substracter extends CalculateBase {
     public Substracter(){}

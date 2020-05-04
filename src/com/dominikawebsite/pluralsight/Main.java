@@ -1,7 +1,7 @@
 package com.dominikawebsite.pluralsight;
 
-import com.dominikawebsite.pluralsight.calcEngine.oldVersions.OldCalcEngine1;
-import com.dominikawebsite.pluralsight.calcEngine.oldVersions.OldCalcEngineWithArraysLopsAndSwitchv2;
+import com.dominikawebsite.pluralsight.calcengine.oldversions.OldCalcEngine1;
+import com.dominikawebsite.pluralsight.calcengine.oldversions.OldCalcEngineWithArraysLopsAndSwitchv2;
 import com.dominikawebsite.pluralsight.flight.Flight;
 
 public class Main {

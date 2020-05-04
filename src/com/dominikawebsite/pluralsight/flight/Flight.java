@@ -3,8 +3,10 @@ package com.dominikawebsite.pluralsight.flight;
 public class Flight {
 
     //private fields (cannot get or set them from outside the class)
-    private int passengers, seats=150, flightNumber;
-    private char flightClass;
+    private int passengers, seats=150;
+    Integer flightNumber; //changed from int flightNumber, because ints are automatically set to 0 and objects
+    //are set to "null" value - useful for example in toString method below
+    private Character flightClass;
     private boolean [] isSeatAvailable;//initially it is set to false, but we want true
     int totalCheckedBags;
     int maxCarryOns = seats * 2, totalCarryOns;
@@ -42,6 +44,17 @@ public class Flight {
     }
 
     public int getPassengers(){return passengers;}
+
+    //toString method
+    @Override
+    public String toString (){
+    if (flightNumber !=null)//(flightNumber>0)
+        return "Flight #"+flightNumber;
+    else if (flightClass!=null)
+        return "Flight Class "+flightClass;
+    else
+        return "Flight identity not set";
+    }
 
     //method
     public void add1Passenger(){

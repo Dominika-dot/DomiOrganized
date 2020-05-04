@@ -1,4 +1,4 @@
-package com.dominikawebsite.pluralsight.calcEngine;
+package com.dominikawebsite.pluralsight.calcengine;
 
 public class Divider extends CalculateBase {
     public Divider(){}
@@ -11,4 +11,5 @@ public class Divider extends CalculateBase {
         double value = getRightVal()!=0?getLeftVal()/getRightVal():0.0d;
         setResult(value);
     }
+
 }

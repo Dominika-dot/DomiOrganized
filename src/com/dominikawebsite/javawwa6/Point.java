@@ -1,4 +1,4 @@
-package com.dominikawebsite.javaWwa6;
+package com.dominikawebsite.javawwa6;
 public class Point {
 
     private int x = 0;

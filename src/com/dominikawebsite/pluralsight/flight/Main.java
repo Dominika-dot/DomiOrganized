@@ -43,6 +43,7 @@ public class Main {
         CargoFlight stuff2 = (CargoFlight)stuff[2];
         stuff2.add1Package(1,2,3);
         //equals method and "super"
-
+        CrewMember judy = new CrewMember(FlightCrewJob.CoPilot);
+        judy.setJob(FlightCrewJob.Pilot); //after promotion :)
     }
 }

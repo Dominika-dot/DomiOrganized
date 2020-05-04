@@ -1,4 +1,4 @@
-package com.dominikawebsite.pluralsight.calcEngine.oldVersions;
+package com.dominikawebsite.pluralsight.calcengine.oldversions;
 
 public class Main3 {
 
